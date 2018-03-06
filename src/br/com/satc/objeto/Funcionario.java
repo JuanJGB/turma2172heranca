@@ -9,7 +9,7 @@ package br.com.satc.objeto;
  *
  * @author markson
  */
-public class Funcionario {
+public class Funcionario extends Pessoa {
         
         private String cargo;
         private float salario, valorHora, qtdeHora;
@@ -21,13 +21,16 @@ public class Funcionario {
 	return qtdeHora * valorHora;
         
 }    
-        
-    public Funcionario(String cargo, float valorHora, float qtdeHora) {
+
+    public Funcionario(String cargo, float valorHora, float qtdeHora, String nome, String rg, String cpf) {
+        super(nome, rg, cpf);
         this.cargo = cargo;
+        this.salario = calculaSalario(qtdeHora, valorHora);
         this.valorHora = valorHora;
         this.qtdeHora = qtdeHora;
-        this.salario = calculaSalario(qtdeHora, valorHora);
     }
+        
+  
 
         
         

@@ -24,7 +24,7 @@ public class MainCalculaSalario {
      float qtdeHora = Float.parseFloat(JOptionPane.showInputDialog("Informe a quantidade de horas trabalhadas: "));
     
      
-     Funcionario funcionario = new Funcionario(cargo, valorHora, qtdeHora);
+     Funcionario funcionario = new Funcionario(cargo, valorHora, qtdeHora, cargo, cargo, cargo);
      
         JOptionPane.showMessageDialog(null,funcionario.getSalario() );
 
