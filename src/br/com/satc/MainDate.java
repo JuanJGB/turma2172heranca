@@ -29,6 +29,7 @@ public class MainDate {
         SimpleDateFormat conversor = new SimpleDateFormat("dd/MM/yyyy");
         nascimento = conversor.parse("12/03/1991");
         JOptionPane.showMessageDialog(null, nascimento);
+        
     }
 
 }
