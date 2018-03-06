@@ -16,10 +16,9 @@ public class Funcionario {
         //implementar um método para calcular o salario com base na hora e no valor da hora
         
         
-        public static Float calculaSalario(Float qtdeHora, Float valorHora) {
+        public  Float calculaSalario(float qtdeHora, float valorHora) {
             
-	Float salario = qtdeHora * valorHora;
-	return salario;
+	return qtdeHora * valorHora;
         
 }    
         
@@ -27,6 +26,7 @@ public class Funcionario {
         this.cargo = cargo;
         this.valorHora = valorHora;
         this.qtdeHora = qtdeHora;
+        this.salario = calculaSalario(qtdeHora, valorHora);
     }
 
         

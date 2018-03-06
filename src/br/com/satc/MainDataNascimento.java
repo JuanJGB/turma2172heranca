@@ -8,7 +8,6 @@ package br.com.satc;
 import br.com.satc.objeto.Cliente;
 import br.com.satc.objeto.Dependente;
 import static br.com.satc.objeto.Dependente.calculaIdade;
-import static br.com.satc.objeto.Funcionario.calculaSalario;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
